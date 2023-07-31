@@ -1,0 +1,242 @@
+#login {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+*/
+#todo-row-complate {
+  background-color: black;
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+#todo-row:nth-child(8n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+#todo-row:nth-child(8n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+#todo-row:nth-child(8n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
+#todo-row:nth-child(8n + 4) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 127, 1) 0%,
+    rgba(0, 128, 0, 1) 100%
+  );
+}
+
+#todo-row:nth-child(8n + 5) {
+  background: linear-gradient(
+    90deg,
+    rgba(116, 0, 0, 1) 0%,
+    rgba(173, 0, 0, 1) 100%
+  );
+}
+
+#todo-row:nth-child(8n + 6) {
+  background: linear-gradient(
+    90deg,
+    rgba(26, 71, 42, 1) 0%,
+    rgba(42, 98, 61, 1) 100%
+  );
+}
+
+#todo-row:nth-child(8n + 7) {
+  background: linear-gradient(
+    90deg,
+    rgba(26, 45, 68, 1) 0%,
+    rgba(42, 66, 97, 1) 100%
+  );
+}
+
+#todo-row:nth-child(8n + 8) {
+  background: linear-gradient(
+    90deg,
+    rgba(160, 115, 79, 1) 0%,
+    rgba(219, 180, 126, 1) 100%
+  );
+}
+
+#navigasiHome {
+  box-shadow: 7px -5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 7px -5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px -5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*#daftarsiswa {
+  background: linear-gradient(180deg, #3c3444 0%, #915e49 50%, #3c3444 100%);
+}*/
+
+/*#diagram-nilai {
+  background: linear-gradient(180deg, #3c3444 0%, #915e49 50%, #3c3444 100%);
+}*/
+
+/* halaman cerita */
+/*#talk {
+  background: linear-gradient(180deg, #3c3444 0%, #915e49 50%, #3c3444 100%);
+}*/
+
+/* input story */
+#text {
+  box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#button-cerita {
+  box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#button-comment {
+  box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* input tagar */
+#tagar {
+  box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#box-image {
+  box-shadow: -7px -5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -7px -5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px -5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#profil-at-home {
+  box-shadow: -4px -5px 5px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: -4px -5px 5px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: -4px -5px 5px 0px rgba(255, 255, 255, 0.75);
+}
+
+#single-word {
+  overflow: hidden; /* Mengatur teks yang keluar batas untuk dihidden */
+  white-space: nowrap; /* Mengatur teks agar tidak pindah baris */
+  text-overflow: ellipsis; /* Jika teks melebihi batas, tambahkan elipsis (...) diakhir */
+}
+/*
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+*/
