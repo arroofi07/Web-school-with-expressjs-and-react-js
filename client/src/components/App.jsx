@@ -25,46 +25,62 @@ function App() {
   // const [visible, setVisible] = useState(true);
   const navigate = useNavigate();
 
-  
-
-
   useEffect(() => {
     const isLoggedIn = Cookies.get("isLoggedIn");
     const currentPath = window.location.pathname;
-    const userProtectedRoutes = ["/", "/register", "/admin/home"]; // Rute terlindungi untuk user biasa
-    const adminProtectedRoutes = [
-      "/admin",
-      "/home",
-      "/admin/home",
-      "/register",
-    ]; // Rute terlindungi untuk admin
 
     if (isLoggedIn === "true") {
-      // Jika pengguna sudah login
-      if (userProtectedRoutes.includes(currentPath)) {
-        // Jika pengguna mencoba mengakses rute terlindungi untuk user
+      if (currentPath === "/" || currentPath === "/register") {
         navigate("/home", { replace: true });
-      } else if (adminProtectedRoutes.includes(currentPath)) {
-        // Jika pengguna mencoba mengakses rute terlindungi untuk admin
-        navigate("/admin/home", { replace: true });
       }
-    } else if (
-      currentPath !== "/" &&
-      currentPath !== "/register" &&
-      currentPath !== "/admin"
-    ) {
-      navigate("/", { replace: true });
     } else {
-      // Jika pengguna belum login
       if (
-        userProtectedRoutes.includes(currentPath) ||
-        adminProtectedRoutes.includes(currentPath)
+        currentPath !== "/" &&
+        currentPath !== "/register" &&
+        currentPath !== "/admin"
       ) {
-        // Jika pengguna mencoba mengakses rute terlindungi untuk user atau admin
         navigate("/", { replace: true });
       }
     }
-  }, []);
+  }, [navigate]);
+
+  // useEffect(() => {
+  //   const isLoggedIn = Cookies.get("isLoggedIn");
+  //   const currentPath = window.location.pathname;
+  //   const userProtectedRoutes = ["/", "/register", "/admin/home"]; // Rute terlindungi untuk user biasa
+  //   const adminProtectedRoutes = [
+  //     "/admin",
+  //     "/home",
+  //     "/admin/home",
+  //     "/register",
+  //   ]; // Rute terlindungi untuk admin
+
+  //   if (isLoggedIn === "true") {
+  //     // Jika pengguna sudah login
+  //     if (userProtectedRoutes.includes(currentPath)) {
+  //       // Jika pengguna mencoba mengakses rute terlindungi untuk user
+  //       navigate("/home", { replace: true });
+  //     } else if (adminProtectedRoutes.includes(currentPath)) {
+  //       // Jika pengguna mencoba mengakses rute terlindungi untuk admin
+  //       navigate("/admin/home", { replace: true });
+  //     }
+  //   } else if (
+  //     currentPath !== "/" &&
+  //     currentPath !== "/register" &&
+  //     currentPath !== "/admin"
+  //   ) {
+  //     navigate("/", { replace: true });
+  //   } else {
+  //     // Jika pengguna belum login
+  //     if (
+  //       userProtectedRoutes.includes(currentPath) ||
+  //       adminProtectedRoutes.includes(currentPath)
+  //     ) {
+  //       // Jika pengguna mencoba mengakses rute terlindungi untuk user atau admin
+  //       navigate("/", { replace: true });
+  //     }
+  //   }
+  // }, []);
 
   // fungsi agar kembali ke halaman paling atas dari layar
   const handleScrollToTop = () => {
