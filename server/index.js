@@ -134,9 +134,9 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 // });
 
 // validasi tambah nilai mahasiswas end
-
+const port = process.env.PORT || 3001;
 db.sequelize.sync().then(() => {
-  app.listen(3001, () => {
-    console.log("server running on port 3001");
+  app.listen(port, () => {
+    console.log(`Server berjalan pada http://localhost:${port}`);
   });
 });

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "ini bagian server",
     "start": "nodemon index.js",
-    "build": "netlify deploy --prod"
+      "build": "node index.js"
   },
   "author": "arovi",
   "license": "ISC",
