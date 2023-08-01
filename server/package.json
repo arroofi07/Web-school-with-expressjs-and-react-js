@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "ini bagian server",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "npm i"
   },
   "author": "arovi",
   "license": "ISC",
